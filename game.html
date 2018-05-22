@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的贪吃蛇</title>
+    <link rel="stylesheet" href="./css/game.css">
+</head>
+
+<body>
+    <div class="view">
+        <div class="startPage" id="startPage">
+            <div class="startBtn" id="startBtn">
+            </div>
+            
+        </div>
+        <div class="wrapper">
+            <div class="left-side">
+                <img src="image/startOn.png" alt="start or stop" id="startOrStop">
+            </div>
+            <div class="main">
+                <div class="header">
+                    分数:
+                    <span class="localScore" id='localScore'>0</span>
+                </div>
+                <div class="content" id="content"></div>
+            </div>
+        </div>
+        <div class="loser" id='loser'>
+            <div class="loserBox">
+                <div class="close" id='close'></div>
+                <div class="reStart" id="reStart">RESTART</div>
+                <div class="loserScore" id='loserScore'></div>
+            </div>
+        </div>
+    </div>
+    <script src='./js/game.js'></script>
+</body>
+
+</html>
