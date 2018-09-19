@@ -112,16 +112,16 @@ function move() {
         //增加蛇身
         switch (this.direct) {
             case 'right':
-                snakeBody.push([snakeTouchX + 1, snakeTouchY, 'body']);
-                break;
-            case 'left':
                 snakeBody.push([snakeTouchX - 1, snakeTouchY, 'body']);
                 break;
+            case 'left':
+                snakeBody.push([snakeTouchX + 1, snakeTouchY, 'body']);
+                break;
             case 'up':
-                snakeBody.push([snakeTouchX, snakeTouchY - 1, 'body']);
+                snakeBody.push([snakeTouchX, snakeTouchY + 1, 'body']);
                 break;
             case 'down':
-                snakeBody.push([snakeTouchX, snakeTouchY + 1, 'body']);
+                snakeBody.push([snakeTouchX, snakeTouchY - 1, 'body']);
                 break;
             default:
                 break;

@@ -118,16 +118,16 @@ obj={
             //增加蛇身
             switch (this.direct) {
                 case 'right':
-                    this.snakeBody.push([snakeTouchX + 1, snakeTouchY, 'body']);
-                    break;
-                case 'left':
                     this.snakeBody.push([snakeTouchX - 1, snakeTouchY, 'body']);
                     break;
+                case 'left':
+                    this.snakeBody.push([snakeTouchX + 1, snakeTouchY, 'body']);
+                    break;
                 case 'up':
-                    this.snakeBody.push([snakeTouchX, snakeTouchY - 1, 'body']);
+                    this.snakeBody.push([snakeTouchX, snakeTouchY + 1, 'body']);
                     break;
                 case 'down':
-                    this.snakeBody.push([snakeTouchX, snakeTouchY + 1, 'body']);
+                    this.snakeBody.push([snakeTouchX, snakeTouchY - 1, 'body']);
                     break;
                 default:
                     break;
