@@ -37,11 +37,11 @@ obj={
         this.down = true;
         this.score = 0;
     //按键事件集合
-        this.blinkEvent();
+        this.bindEvent();
     // startGame();
     
     },
-    blinkEvent:function(){
+    bindEvent:function(){
         var _this = this;
         this.startBtn.onclick = function () {
             _this.start_Game();
