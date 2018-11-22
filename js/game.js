@@ -1,4 +1,6 @@
 obj={
+
+    
     init:function(){
         this.content = document.getElementById('content');
         this.startPage = document.getElementById('startPage');
